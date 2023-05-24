@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC - Índice de Massa Corporal</title>
+    
+    <!-- Stiles -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+
+    <!-- Scripts -->
+    <script src="./Script.js" type="module" defer></script>
+
+</head>
+
+<body>
+
+    
+    <div class="container">
+        
+        <main class="card">
+            
+            <form name="form" id="form" class="form">
+                <fieldset>
+                    
+                    <legend class="title">Cálculo de IMC </legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="weight">Peso (kg)</label>
+                        <input id="weight" type="text" name="weight" placeholder="95" autocomplete="off">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="height">Altura (cm)</label>
+                        <input  id="height"  type="text" name="height" placeholder="172" autocomplete="off">
+                    </div>
+                    
+                    <div class="buttonAndArrow">
+                        
+                        <button type="submit">Calcular IMC
+                            
+                            <img src="./assets/arrow.svg" alt="Seta apontando para a direita">
+                        </button>
+                        
+                    </div>
+                    
+                    
+                    
+                </fieldset>
+            </form>
+            
+        </main>
+        
+    </div>
+    
+    <div class="modal-wrapper">
+        
+        <div class="modal card">
+            
+            <h2 class="title"> 
+                
+                <span> Seu IMC é de 28 </span> 
+                
+            </h2>
+            
+            <button class="close"> 
+                <img src="./assets/close.svg" alt="Imagem para fechar o pop-up">
+            </button>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="alert-error ">
+        Digite somente números
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+</body>
+</html>
